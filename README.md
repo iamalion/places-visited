@@ -29,7 +29,19 @@ PlacesVisited.prototype.addPlace = function(place){
     this.places[place.city] = place;
 }
 -->
-
 Test 4: "It will assign a unique ID to each  new entry."
 Code:
 Expected output:
+<!--
+PlacesVisited.prototype.addPlace = function(place){
+    place.id = this.assignId();
+    this.places[place.city] = place;
+}
+PlacesVisited.prototype.assignId = function () {
+    this.currentId += 1;
+    return this.currentId;
+};
+-->
+Test 5: "It will retrieve the place."
+Code:
+Expected outcome:

@@ -12,8 +12,24 @@ function Place(city, country) {
 Test 2: "It will return city + country to create a new location."
 Code: place1.location();
 Expected output: "Paris, France"
+<!--
+Place.prototype.location = function () {
+    return this.city + ", " + this.country;
+-->
 
 #### Describe placesVisited()
-Test 1: "It will add a new place."
+Test 3: "It will add a new place."
 Code: 
+Expected output:
+<!--
+function PlacesVisited() {
+    this.places = {};
+}
+PlacesVisited.prototype.addPlace = function(place){
+    this.places[place.city] = place;
+}
+-->
+
+Test 4: "It will assign a unique ID to each  new entry."
+Code:
 Expected output:
